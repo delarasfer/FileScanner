@@ -10,12 +10,15 @@ If one or more files were found then it process them
 
 It uses a Map that provides the association between extensions and processing classes (For this version only TxtProcessor is configured and developed but this is the point to connect with the correct processor). Each processor implements a Processor interface
 
-For each file two read were made (Keeping to one read of the file could be done if the entire file is loaded into memory but I don't like that. Also you could need to search for different characters so I made a separate function for this reason as well)
+For each file two read were made (Keeping to one read of the file could be done if the entire file is loaded into memory but I don't like that)
 
 First method getWords() will identify all words and group them using the same result for calculating Number of words and Most used word
-Second method getOccurenceOfChar() will scan the file for certain character (.) line by line (avoiding loading all the file in memory)
+Second method getOccurenceOfChar() will scan the file for certain character (.) line by line (avoiding loading all the file in memory.Also you could
+need to search for different characters so I made a separate function for this reason as well)
  
-once processed the algortim move the file to the processed folder. One known problem is if there is already a file with the same name in the prossesed folder. In a real production piece of software I will have to assign a unique name to processed files but I keep with the same name in order to move the files from one folder to the other to test the algoritm. These is a simple change if I have to do it.
+once processed the algortim move the file to the processed folder. One known problem is if there is already a file with the same name in the procesed folder. 
+In a real production piece of software I will have to assign a unique name to processed files but I keep with the same name in order to move the files from one folder 
+to the other to test the algoritm. These is a simple change if I have to do it.
 
 If no associated extension was found and exeption was thrown and the file will be moved to the error folder to free the main folder. But the algoritm will keep searching for new file appearances.
 
