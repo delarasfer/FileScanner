@@ -1,0 +1,25 @@
+Usage:
+
+FileScanner basePath
+
+The app will check existence of subfolders (processed, error) and create them if not exists
+
+Then will scan for new files after 5 seconds
+
+If one or more files were found then it process them
+
+For each file two read were made (
+It could only be done if the entire file is loaded into memory I don't like that)
+
+First will identify all words and group them using the same result for calculating Number of words and Most used word
+Second will scan the file for certain character (.) line by line (avoiding loading all the file in memory)
+ 
+once processed move the file to the processed folder
+
+If no associated extension was found and exeption was thrown and the file will be moved to the error folder to free the main folder
+
+Test Units
+
+Included in the project are 3 files associated with tree different tests. You can change the content of this files in order to test the 
+algoritm
+ 
