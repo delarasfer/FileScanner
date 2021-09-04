@@ -10,7 +10,7 @@ If one or more files were found then it process them
 
 It uses a Map that provides the association between extensions and processing classes (For this version only TxtProcessor is configured and developed but this is the point to connect with the correct processor). Each processor implements a Processor interface
 
-For each file two read were made (Keeping to one read of the file could be done if the entire file is loaded into memory but I don't like that)
+For each file two read were made (Keeping to one read of the file could be done if the entire file is loaded into memory but I don't like that. Also you could need to search for different characters so I made a separate function for this reason as well)
 
 First method getWords() will identify all words and group them using the same result for calculating Number of words and Most used word
 Second method getOccurenceOfChar() will scan the file for certain character (.) line by line (avoiding loading all the file in memory)
