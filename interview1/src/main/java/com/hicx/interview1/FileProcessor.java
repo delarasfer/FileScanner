@@ -37,7 +37,7 @@ public class FileProcessor {
 	      .filter(f -> f.contains("."))
 	      .map(f -> f.substring(filename.lastIndexOf(".") + 1));
 	}
-	private long getNumberOfWords(Map<String, Long> words)
+	public long getNumberOfWords(Map<String, Long> words)
 	{
 		numberOfWords = 0;
 		words.entrySet()
@@ -47,7 +47,7 @@ public class FileProcessor {
 		return numberOfWords;
 		
 	}
-	private String getMostUsedWord(Map<String, Long> words)
+	public String getMostUsedWord(Map<String, Long> words)
 	{
 		mostUsedWord = "";
 		words.entrySet()

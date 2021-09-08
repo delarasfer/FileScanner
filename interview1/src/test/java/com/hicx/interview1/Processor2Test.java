@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class Processor2Test
 {
     @Rule
-    public ResourceFile res = new ResourceFile("/test2.txt");
+    public ResourceFile res = new ResourceFile("test2.txt");
 
     @Test
     public void test() throws Exception
