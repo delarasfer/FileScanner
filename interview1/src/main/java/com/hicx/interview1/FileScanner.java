@@ -28,6 +28,7 @@ public class FileScanner
     	if(args.length == 0)
     	{
     		System.out.println("need to add a directory to look for files");
+
     		System.exit(0);
     	}
 		try

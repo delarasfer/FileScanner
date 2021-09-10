@@ -15,18 +15,6 @@ public class AppTest
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
-    {
-    	HashMap<String, Long> words = new HashMap<String, Long>();
-    	words.put("dos", (long) 5);
-    	words.put("cinco", (long) 3);
-    	words.put("seis", (long) 1);
-    	words.put("Fernando", (long) 2);
-    	
-    	FileProcessor fp = new FileProcessor();
-        assertTrue( fp.getMostUsedWord(words).equals("dos") );
-    }
-    @Test
     public void shouldAnswerWithTrueAlso()
     {
     	HashMap<String, Long> words = new HashMap<String, Long>();
